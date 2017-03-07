@@ -1,0 +1,119 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "1. Introduction\n\n\nAcelle Mail Lite Edition for Wordpress (also referred to as Acelle Lite or Acelle Mail) is a Wordpress plugin that lets you manage your mail lists/subscribers and send your email campaigns directly from Wordpress administration dashboard.\n\n\nJust install the Acelle Mail plugin and you can send marketing emails without any limitation. With Wordpress + Acelle Mail, you can get rid of expensive email services like Mailchimp, ActiveCampaign... as now you have full control over the entire system of your own.\n\n\nAcelle Mail can be configured to send email through your own SMTP servers like Postfix, Exim, Sendmail or Qmail. It can also integrate with other email service provider like Amazon SES, SendGrid, Mailgun, ElasticEmail...\n\n\nAcelle Mail is made seamlessly integrated with Wordpress. You can manage your email lists/campaigns right from the Wordpress admin dashboard. You can easily send an email campaign to all Wordpress users.\n\n\n\n\n2. Installation\n\n\n2.1. Prequisites\n\n\nAcelle Mail is built as a Wordpress plugin, so you can install it normally the way you can do with any other Wordpress plugin. The followings are required by Acelle Mail:\n\n\n\n\n\n\nLatest version of Wordpress up and running\n\n\n\n\n\n\nOperating System: Linux (RedHat, Fedora, CentOS, Debian, Ubuntu, etc.). Unfortunately we have yet to support Windows or Mac OS.\n\n\n\n\n\n\nPHP Version: 5.6, 7.x\n\n\n\n\n\n\nMySQL Version: >= 5.x\n\n\n\n\n\n\nApplication server: Apache 2.x\n\n\n\n\n\n\nBelow are the PHP extensions that are required for installing Acelle Mail:\n\n\n\n\n\n\nMbstring\n\n\n\n\n\n\nOpenSSL\n\n\n\n\n\n\nSocket\n\n\n\n\n\n\nPDO Driver\n\n\n\n\n\n\nTokenizer\n\n\n\n\n\n\nPHP Zip Archive\n\n\n\n\n\n\nIMAP Extension\n\n\n\n\n\n\nOthers...\n\n\n\n\n\n\nDon't worry if you are not sure which extensions are available on your server, Acelle Lite will check and prompt you to install the missing ones (if any) during the installation wizard.\n\n\n2.2. Installation steps\n\n\nSuppose your Wordpress source is located at \n/user/www/wordpress\n, then the installation steps are as follows:\n\n\n\n\n\n\nExtract the Acelle Mail zipped file, you will come up with an \nacelle-lite\n folder containing the source files\n\n\n\n\n\n\nCopy the \nacelle-lite\n folder to the plugins folder of your Wordpress instance so that you can come up with the following path: \n/user/www/wordpress/wp-content/plugins/acelle-lite\n\n\n\n\n\n\nLogin to Wordpress using y our admin account\n\n\n\n\n\n\nGo to the Plugins menu, you will see Acelle Mail plugin there\n\n\n\n\n\n\nActivate the plugin and you will see the Acelle Mail menu\n\n\n\n\n\n\nYou are all done!\n\n\n\n\n\n\nAfter setting up the plugin, just click on the menu item to setup and send your first campaign!\n\n\n3. Configuration wizard\n\n\nAt your first visit to the plugin, you need to go through the configuration wizard to setup your email settings.\n\n\n\n\n\n\nFirst of all, Acelle Mail will check if there is any library missing on the server and will remind you to install it.\n\n\n\n\n\n\n\nOnce the database connection is established, Acelle Mail will initialize the database with the default settings as well as create the default administrator.\n\n\n\n\n\n\n\nAcelle Mail will generate the cronjob settings so that you can install to your system. Cronjobs are used to trigger the email campaigns as well as other system processes in the background. Remember that Acelle Mail source folder must be \nwritable\n by the cronjob processes.\n\n\n\n\n\n\n\nAnd after everything is setup. You are ready to go with Acelle Mail\n\n\n\n\n\n\n\n\n\n4. Create your first campaign\n\n\nIn order to send an email campaigns, the followings are required:\n\n\n\n\n\n\nA sending server (an application, a SMTP server or a 3rd service) which actually delivers our emails\n\n\n\n\n\n\nA mail list containing the subscribers to whom we're are sending emails to\n\n\n\n\n\n\n4.1. Create a sending server\n\n\nYou must configure at least one sending server for the system. \nGo to menu \nSending\n > \nSending Servers\n, then choose a sending server type to create\n\n\nAs of version \n2.0.5\n, the following sending server types are supported by Acelle Mail:\n\n\n\n\n\n\nStandard SMTP\n: send email through an internal/external SMTP service.\n\n\n\n\n\n\nSendmail\n: send email directly through the \nsendmail\n program on the hosting server.\n\n\n\n\n\n\nPHP mail() function\n: send email directly through the \nmail()\n function of PHP.\n\n\n\n\n\n\nAmazon SES API/SMTP\n: send email through Amazon Simple Mail Service, using either Amazon's web API or standard SMTP connection.\n\n\n\n\n\n\nMailgun API/SMTP\n: send email through Mailgun, using either Mailgun's web API or standard SMTP connection.\n\n\n\n\n\n\nSendGrid API/SMTP\n: send email through SendGrid, using either SendGrid's web API (v2) or standard SMTP connection.\n\n\n\n\n\n\nElasticEmail API\n: send email through ElasticEmail, using its web API (v2)\n\n\n\n\n\n\nmore to be supported...\n\n\n\n\n\n\n2. Create a mail list and campaign\n\n\nAfter you have setup the sending server, the next step is to create a mail list of all your subscribers. \nGo to \nLists\n > \nCreate List\n to create a Mail List\n. Then you can add subscribers to your list (or potential subscribers can subscribe to your list through Acelle Mail supscription form). You can also import subscribers from a CSV file or from your Wordpress users.\n\n\nOnce your mail list is ready, you can create an email campaign to send to your list. \nGo to \nCampaigns\n > \nCreate Campaign\n, choose the mail list to send and follow the steps to setup and send your campaign.\n\n\nThat's it! You can always track your Campaign's email delivery status (Sent/Bounced/Open) in the Campaign statistics page.",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/#1-introduction",
+            "text": "Acelle Mail Lite Edition for Wordpress (also referred to as Acelle Lite or Acelle Mail) is a Wordpress plugin that lets you manage your mail lists/subscribers and send your email campaigns directly from Wordpress administration dashboard.  Just install the Acelle Mail plugin and you can send marketing emails without any limitation. With Wordpress + Acelle Mail, you can get rid of expensive email services like Mailchimp, ActiveCampaign... as now you have full control over the entire system of your own.  Acelle Mail can be configured to send email through your own SMTP servers like Postfix, Exim, Sendmail or Qmail. It can also integrate with other email service provider like Amazon SES, SendGrid, Mailgun, ElasticEmail...  Acelle Mail is made seamlessly integrated with Wordpress. You can manage your email lists/campaigns right from the Wordpress admin dashboard. You can easily send an email campaign to all Wordpress users.",
+            "title": "1. Introduction"
+        },
+        {
+            "location": "/#2-installation",
+            "text": "",
+            "title": "2. Installation"
+        },
+        {
+            "location": "/#21-prequisites",
+            "text": "Acelle Mail is built as a Wordpress plugin, so you can install it normally the way you can do with any other Wordpress plugin. The followings are required by Acelle Mail:    Latest version of Wordpress up and running    Operating System: Linux (RedHat, Fedora, CentOS, Debian, Ubuntu, etc.). Unfortunately we have yet to support Windows or Mac OS.    PHP Version: 5.6, 7.x    MySQL Version: >= 5.x    Application server: Apache 2.x    Below are the PHP extensions that are required for installing Acelle Mail:    Mbstring    OpenSSL    Socket    PDO Driver    Tokenizer    PHP Zip Archive    IMAP Extension    Others...    Don't worry if you are not sure which extensions are available on your server, Acelle Lite will check and prompt you to install the missing ones (if any) during the installation wizard.",
+            "title": "2.1. Prequisites"
+        },
+        {
+            "location": "/#22-installation-steps",
+            "text": "Suppose your Wordpress source is located at  /user/www/wordpress , then the installation steps are as follows:    Extract the Acelle Mail zipped file, you will come up with an  acelle-lite  folder containing the source files    Copy the  acelle-lite  folder to the plugins folder of your Wordpress instance so that you can come up with the following path:  /user/www/wordpress/wp-content/plugins/acelle-lite    Login to Wordpress using y our admin account    Go to the Plugins menu, you will see Acelle Mail plugin there    Activate the plugin and you will see the Acelle Mail menu    You are all done!    After setting up the plugin, just click on the menu item to setup and send your first campaign!",
+            "title": "2.2. Installation steps"
+        },
+        {
+            "location": "/#3-configuration-wizard",
+            "text": "At your first visit to the plugin, you need to go through the configuration wizard to setup your email settings.    First of all, Acelle Mail will check if there is any library missing on the server and will remind you to install it.    Once the database connection is established, Acelle Mail will initialize the database with the default settings as well as create the default administrator.    Acelle Mail will generate the cronjob settings so that you can install to your system. Cronjobs are used to trigger the email campaigns as well as other system processes in the background. Remember that Acelle Mail source folder must be  writable  by the cronjob processes.    And after everything is setup. You are ready to go with Acelle Mail",
+            "title": "3. Configuration wizard"
+        },
+        {
+            "location": "/#4-create-your-first-campaign",
+            "text": "In order to send an email campaigns, the followings are required:    A sending server (an application, a SMTP server or a 3rd service) which actually delivers our emails    A mail list containing the subscribers to whom we're are sending emails to",
+            "title": "4. Create your first campaign"
+        },
+        {
+            "location": "/#41-create-a-sending-server",
+            "text": "You must configure at least one sending server for the system.  Go to menu  Sending  >  Sending Servers , then choose a sending server type to create  As of version  2.0.5 , the following sending server types are supported by Acelle Mail:    Standard SMTP : send email through an internal/external SMTP service.    Sendmail : send email directly through the  sendmail  program on the hosting server.    PHP mail() function : send email directly through the  mail()  function of PHP.    Amazon SES API/SMTP : send email through Amazon Simple Mail Service, using either Amazon's web API or standard SMTP connection.    Mailgun API/SMTP : send email through Mailgun, using either Mailgun's web API or standard SMTP connection.    SendGrid API/SMTP : send email through SendGrid, using either SendGrid's web API (v2) or standard SMTP connection.    ElasticEmail API : send email through ElasticEmail, using its web API (v2)    more to be supported...",
+            "title": "4.1. Create a sending server"
+        },
+        {
+            "location": "/#2-create-a-mail-list-and-campaign",
+            "text": "After you have setup the sending server, the next step is to create a mail list of all your subscribers.  Go to  Lists  >  Create List  to create a Mail List . Then you can add subscribers to your list (or potential subscribers can subscribe to your list through Acelle Mail supscription form). You can also import subscribers from a CSV file or from your Wordpress users.  Once your mail list is ready, you can create an email campaign to send to your list.  Go to  Campaigns  >  Create Campaign , choose the mail list to send and follow the steps to setup and send your campaign.  That's it! You can always track your Campaign's email delivery status (Sent/Bounced/Open) in the Campaign statistics page.",
+            "title": "2. Create a mail list and campaign"
+        },
+        {
+            "location": "/api/",
+            "text": "1. Introduction\n\n\nAcelle provides RESTful API which is based on simple \nHTTP POST/GET\n requests. We make it easy and quick to integrate Acelle sending capability with your website or application. Our API lets you create, manage, send, schedule campaigns as well as track your delivery statistics.\n\n\n\n\n2. API Reference v1.0\n\n\nLIST\n\n\nGET /api/v1/lists\n\n\nGet all mail lists' information\n\n\ncurl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7\n\n\n\n\nGET /api/v1/lists/{uid}\n\n\nRetrieve a particular list's information\n\n\ncurl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists/{uid}? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7\n\n\n\n\nCAMPAIGN\n\n\nGET /api/v1/campaigns\n\n\nGet all campaigns' information\n\n\ncurl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/campaigns? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7\n\n\n\n\nGET /api/v1/campaigns/{uid}\n\n\nRetrieve a particular campaign's information\n\n\ncurl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/campaigns/{uid}? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7\n\n\n\n\nSUBSCRIBER\n\n\nGET /api/v1/lists/{list_uid}/subscribers\n\n\nGet all subscribers of a mail list\n\n\nParameters:\n\n\n\n\nlist_uid\n Mail list's UID\n\n\n\n\ncurl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists/{list_uid}/subscribers? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7\n\n\n\n\nGET /api/v1/lists/{list_uid}/subscribers/{uid}\n\n\nRetrive a particulr subscriber of a mail list\n\n\nParameters:\n\n\n\n\nlist_uid\n Mail list's UID\n\n\nuid\n Subscriber's UID\n\n\n\n\ncurl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists/{list_uid}/subscribers/{uid}? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7\n\n\n\n\nPATCH /api/v1/lists/{list_uid}/subscribers/{uid}/subscribe\n\n\nSubscribe a subscriber\n\n\nParameters:\n\n\n\n\nlist_uid\n Mail list's UID\n\n\nuid\n Subscriber's UID\n\n\n\n\ncurl -X PATCH -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists/{list_uid}/subscribers/{uid}/subscribe? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7\n\n\n\n\nPATCH /api/v1/lists/{list_uid}/subscribers/{uid}/unsubscribe\n\n\nUnsubscribe a subscriber\n\n\nParameters:\n\n\n\n\nlist_uid\n Mail list's UID\n\n\nuid\n Subscriber's UID\n\n\n\n\ncurl -X PATCH -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists/{list_id}/subscribers/{uid}/unsubscribe? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7",
+            "title": "API Reference"
+        },
+        {
+            "location": "/api/#1-introduction",
+            "text": "Acelle provides RESTful API which is based on simple  HTTP POST/GET  requests. We make it easy and quick to integrate Acelle sending capability with your website or application. Our API lets you create, manage, send, schedule campaigns as well as track your delivery statistics.",
+            "title": "1. Introduction"
+        },
+        {
+            "location": "/api/#2-api-reference-v10",
+            "text": "",
+            "title": "2. API Reference v1.0"
+        },
+        {
+            "location": "/api/#list",
+            "text": "",
+            "title": "LIST"
+        },
+        {
+            "location": "/api/#get-apiv1lists",
+            "text": "Get all mail lists' information  curl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7",
+            "title": "GET /api/v1/lists"
+        },
+        {
+            "location": "/api/#get-apiv1listsuid",
+            "text": "Retrieve a particular list's information  curl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists/{uid}? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7",
+            "title": "GET /api/v1/lists/{uid}"
+        },
+        {
+            "location": "/api/#campaign",
+            "text": "",
+            "title": "CAMPAIGN"
+        },
+        {
+            "location": "/api/#get-apiv1campaigns",
+            "text": "Get all campaigns' information  curl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/campaigns? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7",
+            "title": "GET /api/v1/campaigns"
+        },
+        {
+            "location": "/api/#get-apiv1campaignsuid",
+            "text": "Retrieve a particular campaign's information  curl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/campaigns/{uid}? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7",
+            "title": "GET /api/v1/campaigns/{uid}"
+        },
+        {
+            "location": "/api/#subscriber",
+            "text": "",
+            "title": "SUBSCRIBER"
+        },
+        {
+            "location": "/api/#get-apiv1listslist_uidsubscribers",
+            "text": "Get all subscribers of a mail list  Parameters:   list_uid  Mail list's UID   curl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists/{list_uid}/subscribers? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7",
+            "title": "GET /api/v1/lists/{list_uid}/subscribers"
+        },
+        {
+            "location": "/api/#get-apiv1listslist_uidsubscribersuid",
+            "text": "Retrive a particulr subscriber of a mail list  Parameters:   list_uid  Mail list's UID  uid  Subscriber's UID   curl -X GET -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists/{list_uid}/subscribers/{uid}? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7",
+            "title": "GET /api/v1/lists/{list_uid}/subscribers/{uid}"
+        },
+        {
+            "location": "/api/#patch-apiv1listslist_uidsubscribersuidsubscribe",
+            "text": "Subscribe a subscriber  Parameters:   list_uid  Mail list's UID  uid  Subscriber's UID   curl -X PATCH -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists/{list_uid}/subscribers/{uid}/subscribe? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7",
+            "title": "PATCH /api/v1/lists/{list_uid}/subscribers/{uid}/subscribe"
+        },
+        {
+            "location": "/api/#patch-apiv1listslist_uidsubscribersuidunsubscribe",
+            "text": "Unsubscribe a subscriber  Parameters:   list_uid  Mail list's UID  uid  Subscriber's UID   curl -X PATCH -H \"accept:application/json\" -G \\\nhttp://test.acellemail.com:8888/api/v1/lists/{list_id}/subscribers/{uid}/unsubscribe? \\\n-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7",
+            "title": "PATCH /api/v1/lists/{list_uid}/subscribers/{uid}/unsubscribe"
+        }
+    ]
+}

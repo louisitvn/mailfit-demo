@@ -1,0 +1,6 @@
+## WP Defender - Allow PHP Execution ##
+<Files *.php>
+Order allow,deny
+Allow from all
+</Files>
+## WP Defender - End ##

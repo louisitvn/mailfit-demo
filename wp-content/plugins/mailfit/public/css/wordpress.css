@@ -1,0 +1,75 @@
+@media (min-width: 769px) {
+    .wordpress-top-header {  
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+.wordpress-top-header {    
+    margin-top: -1px;
+    background: #23282d;
+    color: rgba(240,245,250,.6);
+}
+.wordpress-top-header a {
+    color: rgba(240,245,250,.6);
+    padding: 5px 10px;
+    display: inline-block;
+}
+.wordpress-top-header a:hover {
+    color: #fff;
+}
+.navbar-nav > li > a {
+    padding-top: 12px;
+    padding-bottom: 13px;
+}
+.navbar-nav > .dropdown-user > a, .navbar-nav > .dropdown-user > a > span {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navbar-brand {
+    padding: 11px 10px;
+}
+.wordpress-top-header .avatar img {
+    margin-top: -2px;
+    margin-left: 5px;
+}
+@media (min-width: 769px) {
+    .navbar-right {
+        margin-right: -10px;
+    }
+}
+.wordpress-top-header .more_user_box {
+    background: #23282d;
+    width: 300px;
+    padding: 10px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.wordpress-top-header .more_user_box ul {
+    margin: 0;
+    padding: 0;
+}
+.wordpress-top-header .more_user_box ul li {
+    list-style: none;
+}
+.wordpress-top-header .more_user_box ul li a {
+    padding: 2px;
+}
+.wordpress-top-header .user-group:hover .more_user_box {
+    display: block;
+}
+.checkbox-one-line label {
+    float: left;
+    margin-right: 20px;
+    line-height: 33px;
+    font-weight: 600;
+}
+.navbar-brand > img {
+    margin-top: -1px;
+}
+.checkboxes-with-check-all-first .checkbox:first-child {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #ccc;
+}

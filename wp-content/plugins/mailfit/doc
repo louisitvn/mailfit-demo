@@ -1,2 +1,0 @@
-#!/bin/bash
-php apigen.phar generate --source app/Http/Controllers/Api --destination public/api/v1/doc/ --no-source-code

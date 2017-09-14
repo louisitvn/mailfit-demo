@@ -122,3 +122,35 @@
 								</span>
 							</div>
 						@endif
+
+
+<script>
+
+total = 8025;
+elements = $('.bg-sending:first()').parent().parent().parent().find('> td:nth-child(3)');
+
+percentageTxt = elements.find('> div:nth-child(1) > span.stat-num');
+progressBar = elements.find('> div:nth-child(1) .progress-bar-info');
+count = elements.find('> div:nth-child(1) .text-semibold');
+
+i = 1000;
+
+function updateStats() {
+        i += 1;
+        if (i == total) {
+                i = 1000;
+        }
+        percent = (i*100/total).toFixed(1);
+        percentageTxt.html(percent + '%');
+        progressBar.css('width', percent + '%');
+        count.html(i + " / " + total);
+
+        setTimeout(function() {
+                updateStats();
+        }, 10);
+}
+
+updateStats();
+
+</script>
+

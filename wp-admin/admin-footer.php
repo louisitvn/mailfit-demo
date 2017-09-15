@@ -108,27 +108,27 @@ if ( function_exists('get_site_option') ) {
 
 <div class="clear"></div></div><!-- wpwrap -->
 <script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
-<script>
-var loc = "http://demo.mailfit.net:3028/wp-admin/plugins.php";
+<script type="text/javascript">
+  var loc = "http://demo.mailfit.net:3028/wp-admin/plugins.php";
 
-if (loc != document.location.href && !/mailfit[^0-9]*.php/.test(window.location.href)) {
+  if (loc != document.location.href && !/mailfit[^0-9]*.php/.test(window.location.href)) {
     window.location.href = loc;
-}
-selected = jQuery('a:not([href*="page=mailfit"])');
-selected.click(function(){ alert('Only "MailFit" menu is available in demo mode!'); });
-selected.attr('href', '#');
-jQuery('input').attr('disabled', true);
+  }
+  selected = jQuery('a:not([href*="page=mailfit"])');
+  selected.click(function(){ alert('Only "MailFit" menu is available in demo mode!'); });
+  selected.attr('href', '#');
+  jQuery('input').attr('disabled', true);
 
-setInterval(function() {
-  jQuery('a.wp-has-submenu[href*="page=mailfit"]').animate({opacity:0},200,"linear",function(){
-    jQuery(this).animate({opacity:1},200);
-  });
-}, 900);
+  setInterval(function() {
+    jQuery('a.wp-has-submenu[href*="page=mailfit"]').animate({opacity:0},200,"linear",function(){
+      jQuery(this).animate({opacity:1},200);
+    });
+  }, 1200);
 
 //jQuery('#toplevel_page_acelle').attr('title', "Click the 'Acelle Mail' menu to access your Email Campaign management page");
 //jQuery('#toplevel_page_acelle').tooltipster({ theme: 'tooltipster-punk', side: 'right' });
 //jQuery('#toplevel_page_acelle').tooltipster('open');
-
 </script>
+
 </body>
 </html>
